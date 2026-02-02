@@ -17,19 +17,28 @@
             display: flex;
             flex-direction: column;
         }
-
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
         .content {
-            flex: 1;
+            display: flex;
+            flex: 1 0 0;
         }
 
         .banner {
-            height: 100px;
+            display: block;
+            height: 30px;
             background-color: yellow;
+            padding-bottom: env(safe-area-inset-bottom);
         }
     </style>
 </head>
 <body>
-    <div class="content"></div>
-    <div class="banner"></div>
+    <div class="main-container">
+        <div class="content"></div>
+        <div class="banner">FOO BAR</div>
+    </div>
 </body>
 </html>
